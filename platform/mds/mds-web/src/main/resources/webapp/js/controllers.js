@@ -3647,6 +3647,8 @@
                         $scope.showTrashInstance = true;
                         $scope.previousInstance = id;
                         $scope.selectedInstance = id;
+                        $scope.currentRecord = data;
+                        $scope.fields = data.fields;
                         unblockUI();
                     }
                 );
