@@ -1583,6 +1583,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -1790,7 +1798,7 @@
                                             <location>LICENSE.txt</location>
                                         </source>
                                         <source>
-                                            <location>README</location>
+                                            <location>README.md</location>
                                         </source>
                                     </sources>
                                 </mapping>
